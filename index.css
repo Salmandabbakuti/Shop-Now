@@ -82,11 +82,9 @@ body{
        height: 700px;
        margin: 0 auto;
        border: 2px white solid;
-       background-color: rgb(245, 239, 239);
         }
  #left{
        width: 415px;
-       background-color: rgb(4, 166, 255);
        height: 700px;
        margin: 0 auto; 
        float: left;
@@ -111,7 +109,7 @@ body{
        height: 450px;
        margin: 0 auto;
        border: 2px white solid;
-       background-color: rgb(245, 239, 239);
+       background-color: rgb(4, 166, 255);
         }
 /* Full-width input fields */
 #name, #deliveryAddress, #email {
