@@ -31,12 +31,12 @@ function initProducts() {
         for(let i = 0; i < maxProducts; i++) {
             shopnow.allProducts(i, (err, message) => {
                 sectionContent += `<div class="message-box">
-                    <div>ProductId:${message[0]}</div>
-                    <div>Name:${message[1]}</div>
-                    <div>Category:${message[2]}</div>
-                     <div>Price:${message[3]} Wei</div>
-                      <div>Description:${message[4]}</div>
-                       <div>Seller:${message[5]}</div>
+                    <div>ProductId: ${message[0]}</div>
+                    <div>Name: ${message[1]}</div>
+                    <div>Category: ${message[2]}</div>
+                     <div>Price: ${message[3]/1000000000000000000} ETH</div>
+                      <div>Description: ${message[4]}</div>
+                       <div>Seller: ${message[5]}</div>
                 </div>`
 
                 if(i === maxProducts - 1) document.querySelector('#allProducts').innerHTML = sectionContent
