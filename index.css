@@ -79,6 +79,7 @@ body{
       }
 #main{
        width: 1250px;
+       background-color: rgb(4, 166, 255);
        height: 700px;
        margin: 0 auto;
        border: 2px white solid;
@@ -86,6 +87,7 @@ body{
         }
  #left{
        width: 415px;
+       background-color: rgb(4, 166, 255);
        height: 700px;
        margin: 0 auto; 
        float: left;
