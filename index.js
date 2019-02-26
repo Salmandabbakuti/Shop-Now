@@ -51,10 +51,10 @@ function initMyOrders() {
         for(let i = 0; i < maxOrders; i++) {
             shopnow.myOrders(i, (err, order) => {
                 sectionsContent += `<div class="message-box">
-                    <div>ProductId:${order[0]}</div>
-                    <div>Order Status:${order[1]}</div>
-                    <div>PurchaseId:${order[2]}</div>
-                     <div>ShipmenStatus:${order[3]}</div>
+                    <div>ProductId: ${order[0]}</div>
+                    <div>Order Status: ${order[1]}</div>
+                    <div>PurchaseId: ${order[2]}</div>
+                     <div>Shipment Status: ${order[3]}</div>
                 </div>`
 
                 if(i === maxOrders - 1) document.querySelector('#allOrders').innerHTML = sectionsContent
