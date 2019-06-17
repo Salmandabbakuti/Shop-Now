@@ -79,13 +79,13 @@ body{
 #main{
        width: 1250px;
        background-color: rgb(4, 166, 255);
-       height: 750px;
+       height: 850px;
        margin: 0 auto;
        border: 2px white solid;
         }
  #left{
        width: 415px;
-       height: 750px;
+       height: 850px;
        margin: 0 auto; 
        float: left;
        border: 2px white solid;
@@ -93,7 +93,7 @@ body{
         }
   #right{
        width: 415px;
-       height: 750px;
+       height: 850px;
        margin: 0 auto;
        float: right;
        border: 2px white solid;
