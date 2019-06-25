@@ -120,7 +120,7 @@ contract shoppy {
                     }
     
     function sellerSignUp(string memory _name) public payable{
-    require(!sellers[msg.sender].bgPaid)
+    require(!sellers[msg.sender].bgPaid);
         require(msg.value==5 ether);
         owner.transfer(msg.value);
         sellers[msg.sender].name= _name;
