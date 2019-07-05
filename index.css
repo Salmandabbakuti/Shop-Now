@@ -77,14 +77,14 @@ body{
        background-attachment: fixed;
       }
 #main{
-       width: 1250px;
+       width: 895px;
        background-color: rgb(4, 166, 255);
        height: 850px;
        margin: 0 auto;
        border: 2px white solid;
         }
  #left{
-       width: 415px;
+       width: 425px;
        height: 850px;
        margin: 0 auto; 
        float: left;
