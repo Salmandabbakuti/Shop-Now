@@ -78,15 +78,15 @@ body{
         background-attachment: fixed;
       }
 #main{
-       width: 1250px;
-       height: 700px;
+       width: 795px;
+       height: 750px;
        margin: 0 auto;
        border: 2px white solid;
        background-color: rgb(245, 239, 239);
         }
  #left{
-       width: 415px;
-       height: 700px;
+       width: 525px;
+       height: 750px;
        margin: 0 auto; 
        float: left;
        border: 2px white solid;
