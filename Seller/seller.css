@@ -71,12 +71,14 @@ button:active {
 button:hover {
     opacity: 0.7;
 } 
-body{
-         background-image: url(daa.jpg);
-         font-family: 'Courgette', cursive;
-        background-repeat : no-repeat;
-        background-attachment: fixed;
-      }
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  font-family: 'Courgette', cursive;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 #main{
        width: 795px;
        height: 750px;
