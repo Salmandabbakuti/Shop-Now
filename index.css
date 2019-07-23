@@ -80,28 +80,20 @@ html {
   background-size: cover;
 }
 #main{
-       width: 895px;
+       width: 60vw;
        background-color: rgb(4, 166, 255);
-       height: 850px;
+       height: 90vh;
        margin: 0 auto;
        border: 2px white solid;
         }
  #left{
-       width: 425px;
-       height: 850px;
+       width: 30vw;
+       height: 90vh;
        margin: 0 auto; 
        float: left;
        border: 2px white solid;
        background-color: rgb(245, 239, 239);
         }
-  #right{
-       width: 415px;
-       height: 850px;
-       margin: 0 auto;
-       float: right;
-       border: 2px white solid;
-       background-color: rgb(245, 239, 239);
-    }
 /* Add padding to containers */
 .container {
   padding: 10px;
