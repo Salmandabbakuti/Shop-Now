@@ -1,7 +1,7 @@
  function log(message) {
-    $('#log').append($('<p>').text(message));
-    $('#log').scrollTop($('#log').prop('scrollHeight'));
-  }
+   document.getElementById("log").innerHTML=message;
+    console.log(message);
+     }
   function error(message) {
     $('#log').append($('<p>').addClass('dark-red').text(message));
     $('#log').scrollTop($('#log').prop('scrollHeight'));
