@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>Shop NoW</title>
   <link rel="stylesheet" href="index.css">
@@ -8,10 +7,13 @@
 </head>
 <body>
   <center><h1>Shop NoW</h1></center>
-<div id= "left" style="text-align: center; overflow-y: scroll;">
+   <div  id ="main">
+  <div style="text-align: center;">
+    <button id="productListings" onclick="initProducts()">Products</button>
+  <div id= "left" style="text-align: center;">
 <button id="myOrders" onclick="initMyOrders()">My Orders<i class="fa fa-user-circle"></i></button>
 <button id="modal-btn" style="margin-left: 20px;">SignUp</a><i class="fa fa-user-plus"></i></button>
-<button style="margin-left: 20px, color: white;"><a href="./Seller/indexs.html">Switch To Seller</a><i class="fa fa-user-plus"></i></button>  
+<button style="margin-left: 20px, color: white;"><a href="indexs.html">Switch To Seller</a><i class="fa fa-user-plus"></i></button>  
 <div style="text-align: center; margin:1px;">
 <input type="text"  id="cancelProductId" class="example" placeholder="Enter ProductId..." name="search1" style="width:90px">
 <input type="text"  id="cancelPurchaseId" class="example" placeholder="Enter PurchaseId..." name="search2" style="width:90px">
@@ -46,15 +48,10 @@
   </div>
 </form>
 </div>
-</div>
+  </div>
 </div>
 <div id="allOrders" style="text-align: center;"></div>
 </div>
-
-<div  id ="main" style="overflow-y:scroll;>
-<div style="text-align: center;">
-<div style="text-align: center;">
-<button id="productListings" onclick="initProducts()">Products</button>
 </div>
 <div style="text-align: center; margin:1px;">
 <input type="text"  id="buyProductId" class="example" placeholder="Enter ProductId.." name="search2" style="width:12%">
@@ -62,11 +59,11 @@
 <button id="buyProduct" style="width:60px;">Buy</button>
 </div>
 </br>
- <div id="allProducts" style="text-align:center;"></div>
+ <div id="allProducts" style="text-align: center;"></div>
 </div>
  </div>
- <div id="log" style="text-align: center;"></div>
- <script>
+ <div id="log" style="text-align: center;"></div>	
+<script>
 let modalBtn = document.getElementById("modal-btn")
 let modal = document.querySelector(".modal")
 let closeBtn = document.querySelector(".close-btn")
@@ -84,10 +81,9 @@ window.onclick = function(e){
 </script>
 <script src="web3.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src ="index.js"></script>	
+<script src ="index.js"></script>
+</body>
 <footer style="text-align: right;">
   <h6>&copy Salman Dabbakuti </h6>
-
 </footer>
-</body>
 </html>

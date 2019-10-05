@@ -4,7 +4,7 @@ h3, h2, h4{
     color: green;
     text-align: center;
 }
- .example, #buyProductId{
+ .example, #buyProductId {
   padding: 6px;
   font-size: 12px;
   border: 1px solid grey;
@@ -74,18 +74,19 @@ button:hover {
 body{
          background-image: url(daa.jpg);
          font-family: 'Courgette', cursive;
-       background-attachment: fixed;
+        background-repeat : no-repeat;
+        background-attachment: fixed;
       }
 #main{
        width: 1250px;
-       background-color: rgb(4, 166, 255);
-       height: 750px;
+       height: 700px;
        margin: 0 auto;
        border: 2px white solid;
+       background-color: rgb(245, 239, 239);
         }
  #left{
        width: 415px;
-       height: 750px;
+       height: 700px;
        margin: 0 auto; 
        float: left;
        border: 2px white solid;
@@ -93,12 +94,12 @@ body{
         }
   #right{
        width: 415px;
-       height: 750px;
+       height: 700px;
        margin: 0 auto;
        float: right;
        border: 2px white solid;
        background-color: rgb(245, 239, 239);
-    }
+        }
 /* Add padding to containers */
 .container {
   padding: 10px;
@@ -109,10 +110,10 @@ body{
        height: 450px;
        margin: 0 auto;
        border: 2px white solid;
-       background-color: rgb(4, 166, 255);
+       background-color: rgb(245, 239, 239);
         }
 /* Full-width input fields */
-#name, #deliveryAddress, #email {
+#name, #deliveryAddress, #email, #addProductId, #addProductName, #addProductCategory, #addProductPrice, #addProductDescription {
   width: 100%;
   padding: 8px;
   margin: 5px 0 12px 0;
@@ -158,8 +159,8 @@ a {
        background-color: rgb(245, 239, 239);
         }
  #content, .content {
-    width: 385px;
-    height: 80px;
+    width: 340px;
+    height: 60px;
     font-size: 15px;
     border: 2px solid rgb(199, 194, 194);
     background-color: white;
