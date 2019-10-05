@@ -1,11 +1,11 @@
- function log(message) {
-    $('#log').append($('<p>').text(message));
-    $('#log').scrollTop($('#log').prop('scrollHeight'));
-  }
+  function log(message) {
+   document.getElementById("log").innerHTML=message;
+    console.log(message);
+     }
   function error(message) {
     $('#log').append($('<p>').addClass('dark-red').text(message));
     $('#log').scrollTop($('#log').prop('scrollHeight'));
-  }
+     }
   function waitForReceipt(hash, cb) {
     web3.eth.getTransactionReceipt(hash, function (err, receipt) {
       if (err) {
