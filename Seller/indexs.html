@@ -1,111 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Shop NoW</title>
   <link rel="stylesheet" href="../index.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <center><h1>Shop NoW</h1><h6>Sellers</h6></center>
-<div id= "left" style="text-align: center;">
-  <div class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div id="center" style="text-align: center;">
-<form>
-  <div class="container">
-    <h1>List Your Product</h1>
-    <hr>
-    <div style="text-align: center;">
-     <label for="name"><b>ProductId</b></label>
-    <input type="text" id="addProductId" placeholder="Enter Your ProductId.."required>
-     </div>
-     <div style="text-align: center;">
-    <label for="address"><b>Product Name</b></label>
-    <input type="text"  id="addProductName" placeholder="Enter Product Name."required>
-    </div>
-     <div style="text-align: center;">
-    <label for="address"><b>Price</b></label>
-    <input type="text"  id="addProductPrice" placeholder="Enter Your Listing Price in Ether..."required>
-    </div>
-     <div style="text-align: center;">
-    <label for="address"><b>Product Description</b></label>
-    <input type="text"  id="addProductDescription" placeholder="Enter Product Description."required>
-    </div>
-    <div style="text-align: center;">
-    <label for="about"><b>Category</b></label>
-    <input type="text" id="addProductCategory" placeholder="Enter Product Category.." required>
-    <hr>
-    </div>
-   <div style="text-align: center;"> 
-    <button id="addProduct" class="registerbtn">List Your Product</button>
-     </div>
+  <div style="text-align: center;">
+    <h1>Shop NoW</h1>
+    <h6>Sellers</h6>
   </div>
-</form>
-</div>
-</div>
-</div>
-<input type="text"  id="sellerName" class="example" placeholder="Enter Your Name.." name="search2" style="width:100px">
-<button id="createSellerAccount">Register<i class="fa fa-user-plus"></i></button>
-<button id="modal-btn" style="margin-left: 20px;">New Product</a><i class="fa fa-user-plus"></i></button>
-<div style="text-align: center; margin:1px;">
-  <center><h3>Refunds</h3></center>
-<input type="text"  id="refundProductId" class="example" placeholder="Enter ProductId..." name="search1" style="width:90px">
-<input type="text"  id="refundPurchaseId" class="example" placeholder="Enter PurchaseId..." name="search2" style="width:90px">
-<input type="text"  id="refundPrice" class="example" placeholder=" Price in Ether.." name="search2" style="width:60px">
-<button id="refund" style="width:60px">Refund</button>
-</div>
-<hr>
-<div style="text-align: center; margin:1px;">
-  <center><h3 style="margin-bottom: 3px;">Shipments</h3></center>
-<input type="text"  id="shipPurchaseId" class="example" placeholder="Enter PurchaseId.." name="search2" style="width:40%">
-</div>
-<div style="text-align: center;">
-<textarea type="text" rows="4" class="content"  id="shipmentDetails" placeholder="Update Shipment Details.." required /></textarea>
-</div>
-<button id="updateShipment" style="width:40%;">Update Shipment Details</button>
-<br/>
-<div style="text-align: center;">
-<input type="text"  id="searchPurchaseId" class="example" placeholder="Enter PurchaseId...." name="search2" style="margin:auto;max-width:300px">
-<button type="submit" id="getShipments" style="width: 60px;"><i class="fa fa-search"></i></button>
-</div>
-<div id = "response" style="text-align: center;">
-<p><b>ProductId:</b></p>
- <span id="getProductId">??</span>
-<p><b>Shipment Status:</p></b>
-<span id="getShipmentStatus">??</span>
-<p><b>Ordered By:</b></p>
-<span id="getOrderedBy">??</span>
-<p><b>DeliveryAddress:</b></p>
-<span id="getShipmentAddress">??</span>
-</div>
-</div>
-   <div id ="main" style="text-align:center; overflow-y:scroll;">
+  <div id="left" style="text-align: center;">
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="center" style="text-align: center;">
+          <form>
+            <div class="container">
+              <h1>List Your Product</h1>
+              <hr>
+              <div style="text-align: center;">
+                <label for="name"><b>ProductId</b></label>
+                <input type="text" id="addProductId" placeholder="Enter Your ProductId.." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="address"><b>Product Name</b></label>
+                <input type="text" id="addProductName" placeholder="Enter Product Name." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="address"><b>Price</b></label>
+                <input type="text" id="addProductPrice" placeholder="Enter Your Listing Price in Ether..." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="address"><b>Product Description</b></label>
+                <input type="text" id="addProductDescription" placeholder="Enter Product Description." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="about"><b>Category</b></label>
+                <input type="text" id="addProductCategory" placeholder="Enter Product Category.." required>
+                <hr>
+              </div>
+              <div style="text-align: center;">
+                <button id="addProduct" class="registerbtn">List Your Product</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <input type="text" id="sellerName" class="example" placeholder="Enter Your Name.." name="search2"
+      style="width:100px">
+    <button id="createSellerAccount">Register<i class="fa fa-user-plus"></i></button>
+    <button id="modal-btn" style="margin-left: 20px;">New Product</a><i class="fa fa-user-plus"></i></button>
+    <div style="text-align: center; margin:1px;">
+      <h3 style="text-align: center;">Refunds</h3>
+      <input type="text" id="refundProductId" class="example" placeholder="Enter ProductId..." name="search1"
+        style="width:90px">
+      <input type="text" id="refundPurchaseId" class="example" placeholder="Enter PurchaseId..." name="search2"
+        style="width:90px">
+      <input type="text" id="refundPrice" class="example" placeholder=" Price in Ether.." name="search2"
+        style="width:60px">
+      <button id="refund" style="width:60px">Refund</button>
+    </div>
+    <hr>
+    <div style="text-align: center; margin:1px;">
+      <h3 style="margin-bottom: 3px; text-align: center;">Shipments</h3>
+      <input type="text" id="shipPurchaseId" class="example" placeholder="Enter PurchaseId.." name="search2"
+        style="width:40%">
+    </div>
+    <div style="text-align: center;">
+      <textarea type="text" rows="4" class="content" id="shipmentDetails" placeholder="Update Shipment Details.."
+        required /></textarea>
+    </div>
+    <button id="updateShipment" style="width:40%;">Update Shipment Details</button>
+    <br />
+    <div style="text-align: center;">
+      <input type="text" id="searchPurchaseId" class="example" placeholder="Enter PurchaseId...." name="search2"
+        style="margin:auto;max-width:300px">
+      <button type="submit" id="getShipments" style="width: 60px;"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="response" style="text-align: center;">
+      <p><b>ProductId:</b></p>
+      <span id="getProductId">??</span>
+      <p><b>Shipment Status:</p></b>
+      <span id="getShipmentStatus">??</span>
+      <p><b>Ordered By:</b></p>
+      <span id="getOrderedBy">??</span>
+      <p><b>DeliveryAddress:</b></p>
+      <span id="getShipmentAddress">??</span>
+    </div>
+  </div>
+  <div id="main" style="text-align:center; overflow-y:scroll;">
     <button id="allOrderListings" onclick="initOrdersPlaced()">Orders</button>
-     <div id="allOrdersPlaced" style="text-align: center;"></div>
-      </br>
-       </div>
-      <div id="log" style="text-align: center;"></div>	
-     <script>
-let modalBtn = document.getElementById("modal-btn")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-}
-closeBtn.onclick = function(){
-  modal.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
-  }
-}
-</script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src ="seller.js"></script>
+    <div id="allOrdersPlaced" style="text-align: center;"></div>
+    </br>
+  </div>
+  <div id="log" style="text-align: center;"></div>
+  <script>
+    let modalBtn = document.getElementById("modal-btn");
+    let modal = document.querySelector(".modal");
+    let closeBtn = document.querySelector(".close-btn");
+    modalBtn.onclick = function () {
+      modal.style.display = "block";
+    };
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (e) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="seller.js"></script>
 </body>
 <footer style="text-align: right;">
   <h6>&copy Salman Dabbakuti </h6>
 </footer>
+
 </html>

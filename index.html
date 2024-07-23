@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
   <title>Shop NoW</title>
   <link rel="stylesheet" href="index.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <center><h1>Shop NoW</h1></center>
-<div id= "left" style="text-align: center; overflow-y: scroll;">
-<button id="myOrders" onclick="initMyOrders()">My Orders<i class="fa fa-user-circle"></i></button>
-<button id="modal-btn" style="margin-left: 20px;">SignUp</a><i class="fa fa-user-plus"></i></button>
-<button style="margin-left: 20px, color: white;"><a href="./Seller/indexs.html">Switch To Seller</a><i class="fa fa-user-plus"></i></button>  
-<div style="text-align: center; margin:1px;">
-<input type="text"  id="cancelProductId" class="example" placeholder="Enter ProductId..." name="search1" style="width:90px">
-<input type="text"  id="cancelPurchaseId" class="example" placeholder="Enter PurchaseId..." name="search2" style="width:90px">
-<button id="cancelOrder" style="width:60px">Cancel Order</button>
-</div>
-<div class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div id="center" style="text-align: center;">
-<form>
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-    <div style="text-align: center;">
-     <label for="name"><b>Name</b></label>
-    <input type="text" id="name" placeholder="Enter Your Name.."required>
-     </div>
-     <div style="text-align: center;">
-    <label for="address"><b>Email Address</b></label>
-    <input type="text"  id="email" placeholder="Someone@email.com."required>
+  <h1 style="text-align: center;">Shop NoW</h1>
+  <div id="left" style="text-align: center; overflow-y: scroll;">
+    <button id="myOrders" onclick="initMyOrders()">My Orders<i class="fa fa-user-circle"></i></button>
+    <button id="modal-btn" style="margin-left: 20px;">SignUp</a><i class="fa fa-user-plus"></i></button>
+    <button style="margin-left: 20px; color: white;"><a href="./Seller/indexs.html">Switch To Seller</a><i
+        class="fa fa-user-plus"></i></button>
+    <div style="text-align: center; margin:1px;">
+      <input type="text" id="cancelProductId" class="example" placeholder="Enter ProductId..." name="search1"
+        style="width:90px">
+      <input type="text" id="cancelPurchaseId" class="example" placeholder="Enter PurchaseId..." name="search2"
+        style="width:90px">
+      <button id="cancelOrder" style="width:60px">Cancel Order</button>
     </div>
-    <div style="text-align: center;">
-    <label for="about"><b>Delivery Address</b></label>
-    <input type="text" id="deliveryAddress" placeholder="Enter Your Preferd Delivery Address.." required>
-    <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="center" style="text-align: center;">
+          <form>
+            <div class="container">
+              <h1>Register</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <div style="text-align: center;">
+                <label for="name"><b>Name</b></label>
+                <input type="text" id="name" placeholder="Enter Your Name.." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="address"><b>Email Address</b></label>
+                <input type="text" id="email" placeholder="Someone@email.com." required>
+              </div>
+              <div style="text-align: center;">
+                <label for="about"><b>Delivery Address</b></label>
+                <input type="text" id="deliveryAddress" placeholder="Enter Your Preferd Delivery Address.." required>
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              </div>
+              <div style="text-align: center;">
+                <button id="createAccount" class="registerbtn">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-   <div style="text-align: center;"> 
-    <button id="createAccount" class="registerbtn">Register</button>
-     </div>
+    <div id="allOrders" style="text-align: center;"></div>
   </div>
-</form>
-</div>
-</div>
-</div>
-<div id="allOrders" style="text-align: center;"></div>
-</div>
 
-<div  id ="main" style="overflow-y:scroll;>
-<div style="text-align: center;">
-<div style="text-align: center;">
-<button id="productListings" onclick="initProducts()">Products</button>
-</div>
-<div style="text-align: center; margin:1px;">
-<input type="text"  id="buyProductId" class="example" placeholder="Enter ProductId.." name="search2" style="width:12%">
-<input type="text"  id="buyAmount" class="example" placeholder="Confirm Amount.." name="search2" style="width:8%">
-<button id="buyProduct" style="width:60px;">Buy</button>
-</div>
-</br>
- <div id="allProducts" style="text-align:center;"></div>
-</div>
- </div>
- <div id="log" style="text-align: center;"></div>
- <script>
-let modalBtn = document.getElementById("modal-btn")
-let modal = document.querySelector(".modal")
-let closeBtn = document.querySelector(".close-btn")
-modalBtn.onclick = function(){
-  modal.style.display = "block"
-}
-closeBtn.onclick = function(){
-  modal.style.display = "none"
-}
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.style.display = "none"
-  }
-}
-</script>
-<script src="web3.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src ="index.js"></script>	
-<footer style="text-align: right;">
-  <h6>&copy Salman Dabbakuti </h6>
+  <div id="main" style="overflow-y:scroll;">
+    <div style=" text-align: center;">
+      <div style="text-align: center;">
+        <button id="productListings" onclick="initProducts()">Products</button>
+      </div>
+      <div style="text-align: center; margin:1px;">
+        <input type="text" id="buyProductId" class="example" placeholder="Enter ProductId.." name="search2"
+          style="width:12%">
+        <input type="text" id="buyAmount" class="example" placeholder="Confirm Amount.." name="search2"
+          style="width:8%">
+        <button id="buyProduct" style="width:60px;">Buy</button>
+      </div>
+      </br>
+      <div id="allProducts" style="text-align:center;"></div>
+    </div>
+  </div>
+  <div id="log" style="text-align: center;"></div>
+  <script>
+    let modalBtn = document.getElementById("modal-btn");
+    let modal = document.querySelector(".modal");
+    let closeBtn = document.querySelector(".close-btn");
+    modalBtn.onclick = function () {
+      modal.style.display = "block";
+    };
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (e) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+  <footer style="text-align: right;">
+    <h6>&copy Salman Dabbakuti </h6>
 
-</footer>
+  </footer>
 </body>
+
 </html>
